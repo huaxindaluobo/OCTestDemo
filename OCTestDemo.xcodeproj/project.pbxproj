@@ -16,6 +16,10 @@
 		0618DAC0247627AA0050E24E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618DABF247627AA0050E24E /* main.m */; };
 		0618DACA247627AA0050E24E /* OCTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618DAC9247627AA0050E24E /* OCTestDemoTests.m */; };
 		0618DAD5247627AA0050E24E /* OCTestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618DAD4247627AA0050E24E /* OCTestDemoUITests.m */; };
+		0618E78424767A690050E24E /* TargetProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E77C24767A680050E24E /* TargetProxy.m */; };
+		0618E78524767A690050E24E /* JSDistProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E77D24767A680050E24E /* JSDistProxy.m */; };
+		0618E78624767A690050E24E /* TimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E77E24767A690050E24E /* TimerProxy.m */; };
+		0618E78724767A690050E24E /* LYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E78224767A690050E24E /* LYTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,14 @@
 		0618DAD0247627AA0050E24E /* OCTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0618DAD4247627AA0050E24E /* OCTestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestDemoUITests.m; sourceTree = "<group>"; };
 		0618DAD6247627AA0050E24E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0618E77C24767A680050E24E /* TargetProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetProxy.m; sourceTree = "<group>"; };
+		0618E77D24767A680050E24E /* JSDistProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDistProxy.m; sourceTree = "<group>"; };
+		0618E77E24767A690050E24E /* TimerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerProxy.m; sourceTree = "<group>"; };
+		0618E77F24767A690050E24E /* LYTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTimer.h; sourceTree = "<group>"; };
+		0618E78024767A690050E24E /* TargetProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetProxy.h; sourceTree = "<group>"; };
+		0618E78124767A690050E24E /* JSDistProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDistProxy.h; sourceTree = "<group>"; };
+		0618E78224767A690050E24E /* LYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTimer.m; sourceTree = "<group>"; };
+		0618E78324767A690050E24E /* TimerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerProxy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,7 @@
 		0618DAAC247627A80050E24E /* OCTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0618E77B24767A680050E24E /* Proxy */,
 				0618DAAD247627A80050E24E /* AppDelegate.h */,
 				0618DAAE247627A80050E24E /* AppDelegate.m */,
 				0618DAB0247627A80050E24E /* SceneDelegate.h */,
@@ -135,6 +148,21 @@
 				0618DAD6247627AA0050E24E /* Info.plist */,
 			);
 			path = OCTestDemoUITests;
+			sourceTree = "<group>";
+		};
+		0618E77B24767A680050E24E /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				0618E77C24767A680050E24E /* TargetProxy.m */,
+				0618E77D24767A680050E24E /* JSDistProxy.m */,
+				0618E77E24767A690050E24E /* TimerProxy.m */,
+				0618E77F24767A690050E24E /* LYTimer.h */,
+				0618E78024767A690050E24E /* TargetProxy.h */,
+				0618E78124767A690050E24E /* JSDistProxy.h */,
+				0618E78224767A690050E24E /* LYTimer.m */,
+				0618E78324767A690050E24E /* TimerProxy.h */,
+			);
+			path = Proxy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,8 +297,12 @@
 			files = (
 				0618DAB5247627A80050E24E /* ViewController.m in Sources */,
 				0618DAAF247627A80050E24E /* AppDelegate.m in Sources */,
+				0618E78424767A690050E24E /* TargetProxy.m in Sources */,
+				0618E78724767A690050E24E /* LYTimer.m in Sources */,
 				0618DAC0247627AA0050E24E /* main.m in Sources */,
 				0618DAB2247627A80050E24E /* SceneDelegate.m in Sources */,
+				0618E78624767A690050E24E /* TimerProxy.m in Sources */,
+				0618E78524767A690050E24E /* JSDistProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = OCTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = OCTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
