@@ -20,6 +20,7 @@
 		0618E78524767A690050E24E /* JSDistProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E77D24767A680050E24E /* JSDistProxy.m */; };
 		0618E78624767A690050E24E /* TimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E77E24767A690050E24E /* TimerProxy.m */; };
 		0618E78724767A690050E24E /* LYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E78224767A690050E24E /* LYTimer.m */; };
+		0618E78B247683190050E24E /* MsgForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E78A247683190050E24E /* MsgForwarding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		0618E78124767A690050E24E /* JSDistProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDistProxy.h; sourceTree = "<group>"; };
 		0618E78224767A690050E24E /* LYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTimer.m; sourceTree = "<group>"; };
 		0618E78324767A690050E24E /* TimerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerProxy.h; sourceTree = "<group>"; };
+		0618E789247683190050E24E /* MsgForwarding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MsgForwarding.h; sourceTree = "<group>"; };
+		0618E78A247683190050E24E /* MsgForwarding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MsgForwarding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,7 @@
 		0618DAAC247627A80050E24E /* OCTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0618E788247682F60050E24E /* Rumtime */,
 				0618E77B24767A680050E24E /* Proxy */,
 				0618DAAD247627A80050E24E /* AppDelegate.h */,
 				0618DAAE247627A80050E24E /* AppDelegate.m */,
@@ -163,6 +167,15 @@
 				0618E78324767A690050E24E /* TimerProxy.h */,
 			);
 			path = Proxy;
+			sourceTree = "<group>";
+		};
+		0618E788247682F60050E24E /* Rumtime */ = {
+			isa = PBXGroup;
+			children = (
+				0618E789247683190050E24E /* MsgForwarding.h */,
+				0618E78A247683190050E24E /* MsgForwarding.m */,
+			);
+			path = Rumtime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +310,7 @@
 			files = (
 				0618DAB5247627A80050E24E /* ViewController.m in Sources */,
 				0618DAAF247627A80050E24E /* AppDelegate.m in Sources */,
+				0618E78B247683190050E24E /* MsgForwarding.m in Sources */,
 				0618E78424767A690050E24E /* TargetProxy.m in Sources */,
 				0618E78724767A690050E24E /* LYTimer.m in Sources */,
 				0618DAC0247627AA0050E24E /* main.m in Sources */,
