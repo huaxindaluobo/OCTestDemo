@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061849DF2480F5F70050E24E /* GCD_thread.m in Sources */ = {isa = PBXBuildFile; fileRef = 061849DE2480F5F70050E24E /* GCD_thread.m */; };
 		0618DAAF247627A80050E24E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618DAAE247627A80050E24E /* AppDelegate.m */; };
 		0618DAB2247627A80050E24E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618DAB1247627A80050E24E /* SceneDelegate.m */; };
 		0618DAB5247627A80050E24E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618DAB4247627A80050E24E /* ViewController.m */; };
@@ -21,6 +22,7 @@
 		0618E78624767A690050E24E /* TimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E77E24767A690050E24E /* TimerProxy.m */; };
 		0618E78724767A690050E24E /* LYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E78224767A690050E24E /* LYTimer.m */; };
 		0618E78B247683190050E24E /* MsgForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E78A247683190050E24E /* MsgForwarding.m */; };
+		061A536424888A8B00E6D815 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 061A536324888A8B00E6D815 /* TestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		061849DD2480F5F70050E24E /* GCD_thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_thread.h; sourceTree = "<group>"; };
+		061849DE2480F5F70050E24E /* GCD_thread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_thread.m; sourceTree = "<group>"; };
 		0618DAAA247627A80050E24E /* OCTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0618DAAD247627A80050E24E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0618DAAE247627A80050E24E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		0618E78324767A690050E24E /* TimerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerProxy.h; sourceTree = "<group>"; };
 		0618E789247683190050E24E /* MsgForwarding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MsgForwarding.h; sourceTree = "<group>"; };
 		0618E78A247683190050E24E /* MsgForwarding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MsgForwarding.m; sourceTree = "<group>"; };
+		061A536224888A8B00E6D815 /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		061A536324888A8B00E6D815 /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		061849DC2480F5130050E24E /* Multithread */ = {
+			isa = PBXGroup;
+			children = (
+				061849DD2480F5F70050E24E /* GCD_thread.h */,
+				061849DE2480F5F70050E24E /* GCD_thread.m */,
+			);
+			path = Multithread;
+			sourceTree = "<group>";
+		};
 		0618DAA1247627A80050E24E = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +134,8 @@
 		0618DAAC247627A80050E24E /* OCTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				061A5361248887F100E6D815 /* 小知识 */,
+				061849DC2480F5130050E24E /* Multithread */,
 				0618E788247682F60050E24E /* Rumtime */,
 				0618E77B24767A680050E24E /* Proxy */,
 				0618DAAD247627A80050E24E /* AppDelegate.h */,
@@ -157,14 +174,14 @@
 		0618E77B24767A680050E24E /* Proxy */ = {
 			isa = PBXGroup;
 			children = (
+				0618E78024767A690050E24E /* TargetProxy.h */,
 				0618E77C24767A680050E24E /* TargetProxy.m */,
+				0618E78124767A690050E24E /* JSDistProxy.h */,
 				0618E77D24767A680050E24E /* JSDistProxy.m */,
+				0618E78324767A690050E24E /* TimerProxy.h */,
 				0618E77E24767A690050E24E /* TimerProxy.m */,
 				0618E77F24767A690050E24E /* LYTimer.h */,
-				0618E78024767A690050E24E /* TargetProxy.h */,
-				0618E78124767A690050E24E /* JSDistProxy.h */,
 				0618E78224767A690050E24E /* LYTimer.m */,
-				0618E78324767A690050E24E /* TimerProxy.h */,
 			);
 			path = Proxy;
 			sourceTree = "<group>";
@@ -176,6 +193,15 @@
 				0618E78A247683190050E24E /* MsgForwarding.m */,
 			);
 			path = Rumtime;
+			sourceTree = "<group>";
+		};
+		061A5361248887F100E6D815 /* 小知识 */ = {
+			isa = PBXGroup;
+			children = (
+				061A536224888A8B00E6D815 /* TestObject.h */,
+				061A536324888A8B00E6D815 /* TestObject.m */,
+			);
+			path = "小知识";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +338,8 @@
 				0618DAAF247627A80050E24E /* AppDelegate.m in Sources */,
 				0618E78B247683190050E24E /* MsgForwarding.m in Sources */,
 				0618E78424767A690050E24E /* TargetProxy.m in Sources */,
+				061A536424888A8B00E6D815 /* TestObject.m in Sources */,
+				061849DF2480F5F70050E24E /* GCD_thread.m in Sources */,
 				0618E78724767A690050E24E /* LYTimer.m in Sources */,
 				0618DAC0247627AA0050E24E /* main.m in Sources */,
 				0618DAB2247627A80050E24E /* SceneDelegate.m in Sources */,
