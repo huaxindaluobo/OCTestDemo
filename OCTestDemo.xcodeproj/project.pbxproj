@@ -20,9 +20,13 @@
 		0618E78424767A690050E24E /* TargetProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E77C24767A680050E24E /* TargetProxy.m */; };
 		0618E78524767A690050E24E /* JSDistProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E77D24767A680050E24E /* JSDistProxy.m */; };
 		0618E78624767A690050E24E /* TimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E77E24767A690050E24E /* TimerProxy.m */; };
-		0618E78724767A690050E24E /* LYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E78224767A690050E24E /* LYTimer.m */; };
 		0618E78B247683190050E24E /* MsgForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0618E78A247683190050E24E /* MsgForwarding.m */; };
 		061A536424888A8B00E6D815 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 061A536324888A8B00E6D815 /* TestObject.m */; };
+		066120AE248E161F009F6DA4 /* NSTimer+FLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 066120AD248E161F009F6DA4 /* NSTimer+FLEX.m */; };
+		066120B1248E1958009F6DA4 /* TimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 066120B0248E1958009F6DA4 /* TimerTest.m */; };
+		066120B4248E1A6E009F6DA4 /* NSTimer+Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 066120B3248E1A6E009F6DA4 /* NSTimer+Proxy.m */; };
+		066120B7248E1E4D009F6DA4 /* NSTimer+JYBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 066120B6248E1E4D009F6DA4 /* NSTimer+JYBlock.m */; };
+		06D35175248E2B6F005E5AD2 /* NSObject+JYSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D35174248E2B6F005E5AD2 /* NSObject+JYSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,15 +70,23 @@
 		0618E77C24767A680050E24E /* TargetProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetProxy.m; sourceTree = "<group>"; };
 		0618E77D24767A680050E24E /* JSDistProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDistProxy.m; sourceTree = "<group>"; };
 		0618E77E24767A690050E24E /* TimerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerProxy.m; sourceTree = "<group>"; };
-		0618E77F24767A690050E24E /* LYTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTimer.h; sourceTree = "<group>"; };
 		0618E78024767A690050E24E /* TargetProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetProxy.h; sourceTree = "<group>"; };
 		0618E78124767A690050E24E /* JSDistProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDistProxy.h; sourceTree = "<group>"; };
-		0618E78224767A690050E24E /* LYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTimer.m; sourceTree = "<group>"; };
 		0618E78324767A690050E24E /* TimerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerProxy.h; sourceTree = "<group>"; };
 		0618E789247683190050E24E /* MsgForwarding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MsgForwarding.h; sourceTree = "<group>"; };
 		0618E78A247683190050E24E /* MsgForwarding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MsgForwarding.m; sourceTree = "<group>"; };
 		061A536224888A8B00E6D815 /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
 		061A536324888A8B00E6D815 /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		066120AC248E161F009F6DA4 /* NSTimer+FLEX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FLEX.h"; sourceTree = "<group>"; };
+		066120AD248E161F009F6DA4 /* NSTimer+FLEX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+FLEX.m"; sourceTree = "<group>"; };
+		066120AF248E1958009F6DA4 /* TimerTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerTest.h; sourceTree = "<group>"; };
+		066120B0248E1958009F6DA4 /* TimerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerTest.m; sourceTree = "<group>"; };
+		066120B2248E1A6E009F6DA4 /* NSTimer+Proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Proxy.h"; sourceTree = "<group>"; };
+		066120B3248E1A6E009F6DA4 /* NSTimer+Proxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Proxy.m"; sourceTree = "<group>"; };
+		066120B5248E1E4D009F6DA4 /* NSTimer+JYBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+JYBlock.h"; sourceTree = "<group>"; };
+		066120B6248E1E4D009F6DA4 /* NSTimer+JYBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+JYBlock.m"; sourceTree = "<group>"; };
+		06D35173248E2B6F005E5AD2 /* NSObject+JYSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JYSwizzle.h"; sourceTree = "<group>"; };
+		06D35174248E2B6F005E5AD2 /* NSObject+JYSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JYSwizzle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +146,7 @@
 		0618DAAC247627A80050E24E /* OCTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				066120AB248E15EC009F6DA4 /* Timer */,
 				061A5361248887F100E6D815 /* 小知识 */,
 				061849DC2480F5130050E24E /* Multithread */,
 				0618E788247682F60050E24E /* Rumtime */,
@@ -178,10 +191,6 @@
 				0618E77C24767A680050E24E /* TargetProxy.m */,
 				0618E78124767A690050E24E /* JSDistProxy.h */,
 				0618E77D24767A680050E24E /* JSDistProxy.m */,
-				0618E78324767A690050E24E /* TimerProxy.h */,
-				0618E77E24767A690050E24E /* TimerProxy.m */,
-				0618E77F24767A690050E24E /* LYTimer.h */,
-				0618E78224767A690050E24E /* LYTimer.m */,
 			);
 			path = Proxy;
 			sourceTree = "<group>";
@@ -191,6 +200,8 @@
 			children = (
 				0618E789247683190050E24E /* MsgForwarding.h */,
 				0618E78A247683190050E24E /* MsgForwarding.m */,
+				06D35173248E2B6F005E5AD2 /* NSObject+JYSwizzle.h */,
+				06D35174248E2B6F005E5AD2 /* NSObject+JYSwizzle.m */,
 			);
 			path = Rumtime;
 			sourceTree = "<group>";
@@ -202,6 +213,23 @@
 				061A536324888A8B00E6D815 /* TestObject.m */,
 			);
 			path = "小知识";
+			sourceTree = "<group>";
+		};
+		066120AB248E15EC009F6DA4 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				0618E78324767A690050E24E /* TimerProxy.h */,
+				0618E77E24767A690050E24E /* TimerProxy.m */,
+				066120AC248E161F009F6DA4 /* NSTimer+FLEX.h */,
+				066120AD248E161F009F6DA4 /* NSTimer+FLEX.m */,
+				066120AF248E1958009F6DA4 /* TimerTest.h */,
+				066120B0248E1958009F6DA4 /* TimerTest.m */,
+				066120B2248E1A6E009F6DA4 /* NSTimer+Proxy.h */,
+				066120B3248E1A6E009F6DA4 /* NSTimer+Proxy.m */,
+				066120B5248E1E4D009F6DA4 /* NSTimer+JYBlock.h */,
+				066120B6248E1E4D009F6DA4 /* NSTimer+JYBlock.m */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,16 +363,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0618DAB5247627A80050E24E /* ViewController.m in Sources */,
+				066120AE248E161F009F6DA4 /* NSTimer+FLEX.m in Sources */,
 				0618DAAF247627A80050E24E /* AppDelegate.m in Sources */,
+				066120B4248E1A6E009F6DA4 /* NSTimer+Proxy.m in Sources */,
 				0618E78B247683190050E24E /* MsgForwarding.m in Sources */,
 				0618E78424767A690050E24E /* TargetProxy.m in Sources */,
 				061A536424888A8B00E6D815 /* TestObject.m in Sources */,
+				066120B1248E1958009F6DA4 /* TimerTest.m in Sources */,
 				061849DF2480F5F70050E24E /* GCD_thread.m in Sources */,
-				0618E78724767A690050E24E /* LYTimer.m in Sources */,
 				0618DAC0247627AA0050E24E /* main.m in Sources */,
 				0618DAB2247627A80050E24E /* SceneDelegate.m in Sources */,
 				0618E78624767A690050E24E /* TimerProxy.m in Sources */,
 				0618E78524767A690050E24E /* JSDistProxy.m in Sources */,
+				066120B7248E1E4D009F6DA4 /* NSTimer+JYBlock.m in Sources */,
+				06D35175248E2B6F005E5AD2 /* NSObject+JYSwizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

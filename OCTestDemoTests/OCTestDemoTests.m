@@ -7,14 +7,18 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "TimerTest.h"
 
 @interface OCTestDemoTests : XCTestCase
+
+@property (nonatomic, strong) TimerTest *timerTest;
 
 @end
 
 @implementation OCTestDemoTests
 
 - (void)setUp {
+    self.timerTest = [[TimerTest alloc] init];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -23,8 +27,7 @@
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    [self.timerTest testTimer];
 }
 
 - (void)testPerformanceExample {

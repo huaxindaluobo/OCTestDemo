@@ -12,12 +12,13 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import "TimerProxy.h"
-#import "LYTimer.h"
 #import "MsgForwarding.h"
 #import "TestObject.h"
+#import "TimerTest.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic, strong) LYTimer * timer;
+@property (nonatomic, strong) TimerTest * timerTest;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray<NSString *> *dataSource;
 
@@ -103,25 +104,8 @@ static NSString * cellIdentify = @"cellIdentify";
 }
 
 - (void)testTimer {
-    /*
-    timer相关
-     timer1,timer2只在iOS10之后有效可以通过weakself解决循环引用
-    */
-    //timer---1
-//   self.timer = [NSTimer timerWithTimeInterval:0.1 repeats:YES block:^(NSTimer * _Nonnull timer) {
-//       NSLog(@"----------------");
-//   }];
-//   [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
-//   [self.timer fire];
-
-    //timer---2
-//   self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 repeats:YES block:^(NSTimer * _Nonnull timer) {
-//       NSLog(@"----------------");
-//   }];
-  /*
-   通过代理类解决Timer循环引用
-   */
-   self.timer = [LYTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
+    self.timerTest = [[TimerTest alloc]init];
+    [self.timerTest testTimer];
 }
 
 - (void)timerAction {
